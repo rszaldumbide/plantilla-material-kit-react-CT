@@ -43,6 +43,9 @@ import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMob
 // Material Kit 2 React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 
+// Images
+import logo from "assets/images/bg-presentation.jpg";
+
 function DefaultNavbar({ brand, routes, transparent, light, action, sticky, relative, center }) {
   const [dropdown, setDropdown] = useState("");
   const [dropdownEl, setDropdownEl] = useState("");
@@ -551,7 +554,8 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "Material Kit 2",
+  Image: logo,
+  brand: "OTAVALO TRAIL",
   transparent: false,
   light: false,
   action: false,
